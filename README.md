@@ -74,12 +74,12 @@ O jogo foi criado com foco em:
 
 ## 👥 Integrantes da Guilda
 
-- [Nome do integrante 1]  
-- [Nome do integrante 2]  
-- [Nome do integrante 3]  
-- [Nome do integrante 4]  
-- [Nome do integrante 5]  
-- [Nome do integrante 6]  
+- Lucas da Silva Nascimento
+- Danilo Bragion
+- Kaique Martins Rodrigues
+- Igor Brito
+- Gabriel Tomaz
+- Eduardo Peres Santos Silva 
 
 ---
 
