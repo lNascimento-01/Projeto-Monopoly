@@ -41,13 +41,13 @@ Caso utilize o Visual Studio Code, as seguintes extensões são recomendadas par
 
 
 1. Clone o repositório:
-git clone https://github.com/seu-usuario/mini-monopoly-python.git
+git clone https://github.com/lnascimento-01/mini-monopoly-python.git
 
 2. Acesse a pasta do projeto:
-cd mini-monopoly-python
+mini.py
 
 3. Execute o arquivo principal:
-python main.py
+python mini.py
 
 4. No terminal, insira o bônus inicial dos jogadores e siga as instruções exibidas durante as rodadas do jogo.
 Explicação Técnica
