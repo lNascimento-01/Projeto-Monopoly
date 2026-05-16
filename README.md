@@ -41,7 +41,7 @@ Caso utilize o Visual Studio Code, as seguintes extensões são recomendadas par
 
 
 1. Clone o repositório:
-git clone https://github.com/lnascimento-01/mini-monopoly-python.git
+git clone https://github.com/lNascimento-01/Projeto-Monopoly
 
 2. Acesse a pasta do projeto:
 mini.py
