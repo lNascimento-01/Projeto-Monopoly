@@ -47,11 +47,12 @@ git clone https://github.com/lNascimento-01/Projeto-Monopoly
 mini.py
 
 3. Execute o arquivo principal:
+
 python mini.py
 
 4. No terminal, insira o bônus inicial dos jogadores e siga as instruções exibidas durante as rodadas do jogo.
-Explicação Técnica
 
+## Explicação Técnica
 O projeto foi desenvolvido aplicando os seguintes conceitos de lógica de programação dados em sala de aula:
 
 ## Importação de Bibliotecas
