@@ -1,144 +1,114 @@
-# 🎮 Mini Monopoly (Python)
+## 🎮 Mini Monopoly Python
 
-## 📌 Descrição do Projeto
+Um jogo simples e interativo em Python para praticar conceitos básicos de programação.
 
-Este projeto consiste em um jogo simples inspirado no Monopoly, desenvolvido em Python para rodar no terminal.
+## Integrantes do Grupo
+- Lucas Silva - [lNascimento-01](https://github.com/lnascimento-01)
+- Danilo Bragion -[danilobbragion-stack](https://github.com/danilobbragion-stack)
+- Kaique Martins -[kaiquemartinscont-collab](https://github.com/kaiquemartinscont-collab)
+- Eduardo Peres - [duuhperes](https://github.com/duuhperes)
+- Gabriel Tomaz - [001gabrieltomazmiranda-ship-it](https://github.com/001gabrieltomazmiranda-ship-it)
+- Igor Brito - [iiGo-tch](https://github.com/iigo-tch)
 
-O objetivo do jogo é simular um sistema financeiro básico, onde os jogadores podem comprar propriedades, pagar aluguel, participar de eventos aleatórios e administrar seu dinheiro ao longo das rodadas.
+## Descrição do Projeto
 
-O projeto foi criado com foco no aprendizado de lógica de programação e aplicação de operações aritméticas de forma prática e interativa.
+Este projeto consiste em um jogo interativo desenvolvido em Python que roda diretamente no console.
+O jogo é inspirado no clássico Banco Imobiliário (Monopoly), onde os jogadores percorrem um tabuleiro, compram propriedades, pagam aluguel, enfrentam eventos aleatórios e tentam evitar a falência.
 
----
+O programa utiliza sistema de turnos, rolagem de dados, gerenciamento de saldo e condições de vitória para tornar a experiência dinâmica e divertida.
 
-## 👥 Integrantes da Guilda
+## Pré-requisitos
 
-* Lucas da Silva 
-* Danilo Bragion 
-* Eduardo Peres Santos Silva
-* Gabriel Tomaz de Miranda
-* Kaique Martins Rodrigues
-* Igor Brito Ferreira
+Para rodar este projeto, necessário ter o Python 3.x instalado em sua máquina, o que estou usando no momento é o 3.14.3.
+Para verificar se você já possui o Python instalado, abra o terminal e digite:
 
----
+python --version
 
-## ⚙️ Pré-requisitos
+Download Python
 
-Para executar o projeto, é necessário:
+Extensões Recomendadas (VS Code)
 
-* Python 3.x instalado
-* Um terminal (Prompt de Comando, PowerShell ou VS Code)
+Caso utilize o Visual Studio Code, as seguintes extensões são recomendadas para desenvolvimento em Python:
 
-Não é necessário instalar bibliotecas externas.
 
----
+| Extensão                                                                                                            | Função                              |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| [Python (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python&utm_source=chatgpt.com)   | Suporte completo ao Python          |
+| [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance&utm_source=chatgpt.com)      | Autocompletar e análise inteligente |
+| [Python Debugger](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy&utm_source=chatgpt.com)     | Depuração do código                 |
+| [autopep8](https://marketplace.visualstudio.com/items?itemName=ms-python.autopep8&utm_source=chatgpt.com)           | Formatação automática do código     |
+| [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner&utm_source=chatgpt.com) | Executar código rapidamente         |
 
-## ▶️ Como executar o projeto
 
-### 1. Baixar o código
+1. Clone o repositório:
+git clone https://github.com/seu-usuario/mini-monopoly-python.git
 
-Clone o repositório ou faça download dos arquivos:
+2. Acesse a pasta do projeto:
+cd mini-monopoly-python
 
-```
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```
-
----
-
-### 2. Acessar a pasta do projeto
-
-```
-cd nome-do-projeto
-```
-
----
-
-### 3. Executar o jogo
-
-```
+3. Execute o arquivo principal:
 python main.py
-```
 
----
+4. No terminal, insira o bônus inicial dos jogadores e siga as instruções exibidas durante as rodadas do jogo.
+Explicação Técnica
 
-## 🎮 Como jogar
+O projeto foi desenvolvido aplicando os seguintes conceitos de lógica de programação dados em sala de aula:
 
-1. O jogo começa com dois jogadores com saldo inicial de R$1000.
-2. Cada jogador joga o dado (valor aleatório de 1 a 6).
-3. O jogador se move pelo tabuleiro.
-4. Dependendo da casa:
+Importação de Bibliotecas
+Utilizamos import random para geração de números aleatórios simulando o dado e import os para interação com o terminal.
+Estruturas de Repetição
+O uso do while True garante que o jogo continue em execução até existir um vencedor ou todos os jogadores falirem.
+Controle de Fluxo (Condicionais)
+Aplicamos if, elif e else para controlar eventos do jogo como compra de propriedades, multas, eventos aleatórios e falência.
+Funções
+O sistema foi dividido em funções para organizar melhor a lógica do jogo, como:
+rolar_dado()
+mostrar_status()
+evento()
+verificar_propriedade()
+verificar_falencia()
+verificar_vitoria()
+Entrada e Saída de Dados
+Uso de input() para capturar ações do jogador e print() para exibir informações do jogo no terminal.
+Estruturas de Dados
+Foram utilizadas listas e dicionários para armazenar:
+jogadores
+saldos
+propriedades
+aluguéis
+posições no tabuleiro
+Manipulação de Terminal
+O projeto utiliza códigos ANSI para exibir mensagens coloridas no console, melhorando a experiência visual do usuário.
+Demonstração
 
-   * Pode comprar uma propriedade
-   * Pode pagar aluguel
-   * Pode ganhar ou perder dinheiro (evento)
-5. Se o saldo ficar negativo, o jogador é eliminado (falência).
-6. Ao final das rodadas:
+Exemplo de execução no terminal:
 
-   * Ganha quem tiver mais dinheiro
-   * Ou o último jogador que não faliu
+🎮 Bem-vindo ao Mini Monopoly!
 
----
+======== 🕹️ Rodada 1 ========
 
-## 🧠 Explicação Técnica
+🗺️ TABULEIRO:
+0 - 🏁 Início
+1 - 🏠 Casa A
+2 - 🎁 Evento
+3 - 🏠 Casa B
+4 - ⚠️ Multa
+5 - 🏠 Casa C
 
-Durante o desenvolvimento do projeto, foram aplicados os seguintes conceitos:
+🎮 Turno de 😎 Jogador 1
 
-* **Listas:**
-  Utilizadas para armazenar nomes dos jogadores, saldo, posição no tabuleiro e status (ativo ou falido).
+🎲 Dado: 4
+📍 Caiu em: ⚠️ Multa
+💸 Multa de R$100
 
-* **Dicionários:**
-  Usados para armazenar os preços das propriedades, valores de aluguel e donos das casas.
-
-* **Estruturas de repetição (for):**
-  Controlam o fluxo do jogo, como rodadas e turnos dos jogadores.
-
-* **Estruturas condicionais (if/else):**
-  Aplicadas nas decisões do jogo, como compra de propriedades, pagamento de aluguel e eventos.
-
-* **Funções da biblioteca `random`:**
-  Utilizadas para simular o dado e eventos aleatórios.
-
-* **Operações aritméticas:**
-  Aplicadas em:
-
-  * Soma (ganhos de dinheiro)
-  * Subtração (compras e aluguel)
-  * Comparação (definir vencedor)
-
----
-
-## 💡 Diferenciais do Projeto
-
-* Sistema de eventos aleatórios
-* Mecânica de compra e aluguel de propriedades
-* Sistema de falência
-* Código comentado para facilitar o entendimento
-* Simulação de um sistema econômico básico
-
----
-
-## 🏆 Resultado Final do Jogo
-
-Ao final, o sistema mostra:
-
-* O saldo de cada jogador
-* Quem faliu
-* Quem venceu (ou se houve empate)
-
----
-
-## 🚀 Considerações Finais
-
-Este projeto foi desenvolvido com o objetivo de aplicar na prática os conceitos básicos de programação em Python, especialmente lógica, estruturas de dados e operações matemáticas.
-
-Além disso, o jogo proporciona uma forma interativa de entender como decisões financeiras impactam o resultado final.
-
----
-
-## 🔗 Links dos Perfis GitHub
-
-* https://github.com/lNascimento-01
-* https://github.com/duuhperes13
-* https://github.com/iiGo-tech
-* https://github.com/danilobbragion-stack
-* https://github.com/kaiquemartinscont-collab
-* 
+💰 😎 Jogador 1: R$900
+Funcionalidades
+🎲 Sistema de dado aleatório
+🏠 Compra de propriedades
+💸 Sistema de aluguel
+🎁 Eventos aleatórios
+⚠️ Sistema de multas
+💀 Sistema de falência
+🏆 Verificação automática de vencedor
+🎨 Interface colorida no terminal
+🗺️ Tabuleiro interativo
