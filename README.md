@@ -54,34 +54,34 @@ Explicação Técnica
 
 O projeto foi desenvolvido aplicando os seguintes conceitos de lógica de programação dados em sala de aula:
 
-Importação de Bibliotecas
+## Importação de Bibliotecas
 Utilizamos import random para geração de números aleatórios simulando o dado e import os para interação com o terminal.
-Estruturas de Repetição
+Estruturas de Repetição.
 O uso do while True garante que o jogo continue em execução até existir um vencedor ou todos os jogadores falirem.
-Controle de Fluxo (Condicionais)
+## Controle de Fluxo (Condicionais)
 Aplicamos if, elif e else para controlar eventos do jogo como compra de propriedades, multas, eventos aleatórios e falência.
-Funções
+## Funções
 O sistema foi dividido em funções para organizar melhor a lógica do jogo, como:
-rolar_dado()
-mostrar_status()
-evento()
-verificar_propriedade()
-verificar_falencia()
-verificar_vitoria()
-Entrada e Saída de Dados
+rolar_dado();
+mostrar_status();
+evento();
+verificar_propriedade();
+verificar_falencia();
+verificar_vitoria();
+## Entrada e Saída de Dados
 Uso de input() para capturar ações do jogador e print() para exibir informações do jogo no terminal.
-Estruturas de Dados
+## Estruturas de Dados
 Foram utilizadas listas e dicionários para armazenar:
-jogadores
-saldos
-propriedades
-aluguéis
-posições no tabuleiro
-Manipulação de Terminal
+jogadores;
+saldos;
+propriedades;
+aluguéis;
+posições no tabuleiro;
+## Manipulação de Terminal
 O projeto utiliza códigos ANSI para exibir mensagens coloridas no console, melhorando a experiência visual do usuário.
 Demonstração
 
-Exemplo de execução no terminal:
+## Exemplo de execução no terminal:
 
 🎮 Bem-vindo ao Mini Monopoly!
 
